@@ -3,52 +3,140 @@
 <head>
   <title>Amol Gym</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial;
       background: #111;
       color: white;
+    }
+
+    /* 🔥 NAVBAR */
+    nav {
+      background: black;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      margin: 0;
+      color: red;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* 🔥 HERO */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
 
-    button {
-      padding: 10px 20px;
-      font-size: 18px;
+    .hero h1 {
+      font-size: 50px;
+    }
+
+    .btn {
+      padding: 12px 25px;
       background: red;
       color: white;
       border: none;
       border-radius: 5px;
+      font-size: 18px;
     }
 
     section {
-      padding: 40px;
+      padding: 50px;
+      text-align: center;
     }
+
+    /* 💰 PRICING BOX */
+    .card {
+      background: #222;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* 📞 WHATSAPP BUTTON */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: green;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
   </style>
 </head>
 
 <body>
 
-<!-- 🔥 HERO SECTION -->
-<section style="height:100vh; background:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e') no-repeat center/cover; display:flex; align-items:center; justify-content:center;">
-  
+<!-- 🔥 NAVBAR -->
+<nav>
+  <h2>💪 Amol Gym</h2>
   <div>
-    <h1 style="font-size:50px;">Amol Gym</h1>
-    <p style="font-size:20px;">Transform Your Body 💪</p>
-    <button>Join Now</button>
+    <a href="#">Home</a>
+    <a href="#plans">Plans</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- 🔥 HERO -->
+<div class="hero">
+  <div>
+    <h1>Transform Your Body</h1>
+    <p>Get Fit, Stay Strong 💪</p>
+    <a href="https://wa.me/918208246773">
+      <button class="btn">Join Now</button>
+    </a>
+  </div>
+</div>
+
+<!-- 💰 PLANS -->
+<section id="plans">
+  <h2>Membership Plans</h2>
+
+  <div class="card">
+    <h3>Monthly</h3>
+    <p>₹700</p>
   </div>
 
+  <div class="card">
+    <h3>Yearly</h3>
+    <p>₹7000</p>
+  </div>
 </section>
 
-<!-- 📞 CONTACT SECTION -->
-<section>
+<!-- 📞 CONTACT -->
+<section id="contact">
   <h2>Contact Us</h2>
   <p>📞 8208246773</p>
 
   <a href="tel:8208246773">
-    <button>Call Now</button>
+    <button class="btn">Call Now</button>
   </a>
 </section>
+
+<!-- 📲 WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/918208246773">💬</a>
 
 </body>
 </html>
