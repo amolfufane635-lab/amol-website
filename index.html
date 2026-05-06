@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Amol Gym</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Power Gym</title>
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: #111;
-      color: white;
     }
 
-    /* 🔥 NAVBAR */
+    /* Navbar */
     nav {
       background: black;
       padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-    }
-
-    nav h2 {
-      margin: 0;
-      color: red;
+      text-align: center;
     }
 
     nav a {
       color: white;
-      margin: 0 10px;
+      margin: 15px;
       text-decoration: none;
-    }
-
-    /* 🔥 HERO */
-    .hero {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e') no-repeat center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 50px;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      background: red;
-      color: white;
-      border: none;
-      border-radius: 5px;
       font-size: 18px;
     }
 
+    /* Sections */
     section {
       padding: 50px;
       text-align: center;
     }
 
-    /* 💰 PRICING BOX */
-    .card {
-      background: #222;
-      padding: 20px;
-      margin: 20px;
-      border-radius: 10px;
+    #home {
+      background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') no-repeat center;
+      background-size: cover;
+      color: white;
+      height: 300px;
     }
 
-    /* 📞 WHATSAPP BUTTON */
+    #home h1 {
+      margin-top: 100px;
+      font-size: 40px;
+    }
+
+    #services {
+      background: #f4f4f4;
+    }
+
+    /* Button */
+    .btn {
+      background: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* WhatsApp Button */
     .whatsapp {
       position: fixed;
       bottom: 20px;
@@ -83,81 +74,56 @@
       text-decoration: none;
       font-size: 20px;
     }
-
   </style>
 </head>
 
 <body>
 
-<!-- 🔥 NAVBAR -->
-<nav>
-  <h2>💪 Amol Gym</h2>
-  <div>
-    <a href="#">Home</a>
-    <a href="#plans">Plans</a>
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
-  </div>
-</nav>
+  </nav>
 
-<!-- 🔥 HERO -->
-<div class="hero">
-  <div>
-    <h1>Transform Your Body</h1>
-    <p>Get Fit, Stay Strong 💪</p>
-    <a href="https://wa.me/918208246773">
-      <button class="btn">Join Now</button>
-    </a>
-  </div>
-</div>
+  <!-- Home -->
+  <section id="home">
+    <h1>Power Gym</h1>
+    <p>Transform Your Body Today 💪</p>
+    <button class="btn">Join Now</button>
+  </section>
 
-<!-- 💰 PLANS -->
-<section id="plans">
-  <h2>Membership Plans</h2>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Amol. I help people get fit and strong with proper training.</p>
+  </section>
 
-  <div class="card">
-    <h3>Monthly</h3>
-    <p>₹700</p>
-  </div>
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>🏋️ Weight Training</p>
+    <p>🔥 Cardio Training</p>
+    <p>💪 Personal Trainer</p>
+    <p>🥗 Diet Plan</p>
+  </section>
 
-  <div class="card">
-    <h3>Yearly</h3>
-    <p>₹7000</p>
-  </div>
-</section><section id="contact">
-  <h2>Contact Us</h2>
-  ...
-</section>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 9876543210</p>
+    <p>📍 Pune, India</p>
+    <button class="btn">Contact Now</button>
+  </section>
 
-<!-- 📍 GOOGLE MAP -->
-<section>
-  <h2>Our Location</h2>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Power Gym | All Rights Reserved</p>
+  </footer>
 
-  <iframe 
-    src="https://www.google.com/maps?q=Latur&output=embed"
-    width="100%" 
-    height="300" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy">
-  </iframe>
-
-</section>
-
-</body>
-</html>
-
-<!-- 📞 CONTACT -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>📞 8208246773</p>
-
-  <a href="tel:8208246773">
-    <button class="btn">Call Now</button>
-  </a>
-</section>
-
-<!-- 📲 WHATSAPP FLOAT -->
-<a class="whatsapp" href="https://wa.me/918208246773">💬</a>
+  <!-- WhatsApp Button -->
+  <a class="whatsapp" href="https://wa.me/919876543210">💬</a>
 
 </body>
 </html>
