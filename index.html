@@ -1,129 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Power Gym</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amol Web Studio</title>
 
-    /* Navbar */
-    nav {
-      background: black;
-      padding: 15px;
-      text-align: center;
-    }
+<style>
 
-    nav a {
-      color: white;
-      margin: 15px;
-      text-decoration: none;
-      font-size: 18px;
-    }
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
 
-    /* Sections */
-    section {
-      padding: 50px;
-      text-align: center;
-    }
+/* Navbar */
 
-    #home {
-      background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') no-repeat center;
-      background-size: cover;
-      color: white;
-      height: 300px;
-    }
+nav{
+    background:black;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
 
-    #home h1 {
-      margin-top: 100px;
-      font-size: 40px;
-    }
+nav h2{
+    color:red;
+    margin:0;
+}
 
-    #services {
-      background: #f4f4f4;
-    }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
 
-    /* Button */
-    .btn {
-      background: green;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      margin-top: 10px;
-      cursor: pointer;
-    }
+/* Hero Section */
 
-    /* Footer */
-    footer {
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(to right,#000,#222);
+}
 
-    /* WhatsApp Button */
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: green;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      text-decoration: none;
-      font-size: 20px;
-    }
-  </style>
+.hero h1{
+    font-size:50px;
+    color:red;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.hero button{
+    padding:12px 25px;
+    background:red;
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+}
+
+/* Services */
+
+.services{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1e1e1e;
+    padding:25px;
+    width:250px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(255,0,0,0.3);
+}
+
+.card h3{
+    color:red;
+}
+
+/* About */
+
+.about{
+    padding:50px 20px;
+    text-align:center;
+    background:#181818;
+}
+
+/* Contact */
+
+.contact{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.contact a{
+    display:inline-block;
+    margin-top:15px;
+    background:green;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+/* Footer */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- Navbar -->
 
-  <!-- Home -->
-  <section id="home">
-    <h1>Power Gym</h1>
-    <p>Transform Your Body Today 💪</p>
-    <button class="btn">Join Now</button>
-  </section>
+<nav>
+    <h2>Amol Web Studio</h2>
 
-  <!-- About -->
-  <section id="about">
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <h1>I Build Professional Websites</h1>
+
+    <p>Modern Websites for Shops, Gyms, Businesses & Personal Brands</p>
+
+    <button>Hire Me</button>
+
+</section>
+
+<!-- Services -->
+
+<section class="services">
+
+    <h2>My Services</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Business Website</h3>
+            <p>Professional website for your business.</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio with modern design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>Fast & attractive landing page for promotion.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About -->
+
+<section class="about">
+
     <h2>About Me</h2>
-    <p>My name is Amol. I help people get fit and strong with proper training.</p>
-  </section>
 
-  <!-- Services -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <p>🏋️ Weight Training</p>
-    <p>🔥 Cardio Training</p>
-    <p>💪 Personal Trainer</p>
-    <p>🥗 Diet Plan</p>
-  </section>
+    <p>
+        Hi, I am Amol. I create modern and responsive websites.
+        Contact me for website projects.
+    </p>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📞 9876543210</p>
-    <p>📍 Pune, India</p>
-    <button class="btn">Contact Now</button>
-  </section>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Power Gym | All Rights Reserved</p>
-  </footer>
+<!-- Contact -->
 
-  <!-- WhatsApp Button -->
-  <a class="whatsapp" href="https://wa.me/919876543210">💬</a>
+<section class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>Want a website for your business?</p>
+
+    <a href="https://wa.me/91YOURNUMBER">
+        Chat on WhatsApp
+    </a>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>© 2026 Amol Web Studio</p>
+
+</footer>
 
 </body>
 </html>
