@@ -122,7 +122,43 @@ footer{
     padding:20px;
     margin-top:30px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+button {
+  background: blue;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px cyan;
+}
+
+.typing {
+  width: 22ch;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  animation: typing 4s steps(22), blink .5s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 </style>
 </head>
 
