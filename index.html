@@ -15,7 +15,27 @@ text-align:center;
 padding:80px 20px;
 background:linear-gradient(to right,#000,#111);
 }
+.buttons{
+ display:flex;
+ justify-content:center;
+ gap:20px;
+ margin-top:20px;
+}
 
+.btn{
+ text-decoration:none;
+ background:cyan;
+ color:black;
+ padding:12px 25px;
+ border-radius:30px;
+ font-weight:bold;
+ transition:0.3s;
+}
+
+.btn:hover{
+ transform:scale(1.1);
+ box-shadow:0 0 20px cyan;
+}
 .hero h1{
 font-size:40px;
 color:cyan;
@@ -278,8 +298,13 @@ input, textarea {
     <h1>I Build Professional Websites</h1>
 
     <p>Modern Websites for Shops, Gyms, Businesses & Personal Brands</p>
+<div class="buttons">
 
-    <button>Hire Me</button>
+<a href="#" class="btn">Hire Me</a>
+
+<a href="#" class="btn">View Projects</a>
+
+</div>
 
 </section>
 
